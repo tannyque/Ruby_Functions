@@ -2,24 +2,24 @@ def return_10()
   return 10
 end
 
-def add(number_one, number_two)
-  return number_one + number_two
+def add(first, second)
+  return first + second
 end
 
-def subtract(number_three, number_four)
-  return number_three - number_four
+def subtract(first, second)
+  return first - second
 end
 
-def multiply(number_five, number_six)
-  return number_five * number_six
+def multiply(first, second)
+  return first * second
 end
 
-def divide(number_seven, number_eight)
-  return number_seven / number_eight
+def divide(first, second)
+  return first / second
 end
 
-def length_of_string(string_one)
-  return string_one.length()
+def length_of_string(string)
+  return string.length()
 end
 
 def join_string(string_one, string_two)
