@@ -27,8 +27,7 @@ def join_string(string_one, string_two)
 end
 
 def add_string_as_number(string_one, string_two)
-  add_value =  string_one.to_i() + string_two.to_i
-  return add_value
+  return string_one.to_i + string_two.to_i
 end
 
 def number_to_full_month_name(number)
