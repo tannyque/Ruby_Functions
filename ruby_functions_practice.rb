@@ -78,8 +78,7 @@ def number_to_full_month_name(number)
 end
 
 def number_to_short_month_name(number)
-  full_name = number_to_full_month_name(number)
-return full_name[0..2]
+  return number_to_full_month_name(number)[0..2]
 end
 
 def volume_of_cube(length)
