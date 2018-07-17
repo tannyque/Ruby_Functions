@@ -64,3 +64,19 @@ def number_to_short_month_name(number)
   full_name = number_to_full_month_name(number)
 return full_name[0..2]
 end
+
+def volume_of_cube(length)
+  cubing = length ** 3
+  return cubing
+end
+
+def volume_of_sphere(radius)
+  volume =( 4 * 3.14 * (radius ** 3))/3
+  p volume
+  return volume
+end
+
+def fahrenheit_to_celsius(temperature_inF)
+  temperature_inC = (temperature_inF - 32) * 5 / 9
+  return temperature_inC
+end
