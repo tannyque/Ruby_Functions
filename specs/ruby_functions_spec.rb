@@ -1,7 +1,8 @@
 require( 'minitest/autorun' )
+require( 'minitest/rg' )
 require_relative( '../ruby_functions_practice' )
 
-class Functions_Practice < MiniTest::Test
+class FunctionsPractice < MiniTest::Test
 
   def test_return_10()
     return_10_result = return_10()
@@ -76,27 +77,22 @@ class Functions_Practice < MiniTest::Test
     assert_equal( "Oct", tenth_month_string )
   end
 
-  #Further
+  # #Further
 
-  #Given the length of a side of a cube calculate the volume
+  # #Given the length of a side of a cube calculate the volume
   def test_volume_of_cube()
-    #add test code here
-    result_volume_of_cube = volume_of_cube(3)
-    assert_equal(27, result_volume_of_cube)
+    volume = volume_of_cube(3)
+    assert_equal(27, volume)
   end
 
   #Given the radius of a sphere calculate the volume
   def test_volume_of_sphere()
-    #add test code here
-    result_volume = volume_of_sphere(2)
-    assert_equal(33.51, result_volume)
+    volume = volume_of_sphere(10)
+    assert_equal(4188.79, volume)
   end
 
-  #Given a value in farenheit, convert this into celsius.
   def test_fahrenheit_to_celsius()
-    result_temp = fahrenheit_to_celsius(200)
-    assert_equal(93, result_temp)
+    result = fahrenheit_to_celsius(0)
+    assert_equal(-17.78, result)
   end
-
-
 end
